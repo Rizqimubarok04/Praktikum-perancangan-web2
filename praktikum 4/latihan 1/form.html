@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulir pendaftaran sekolah</title>
+</head>
+<body>
+    <h2><b>Formulir Pendaftaran Sekolah</b></h2>
+  <form action="koneksi.php" method="post">
+        <label for="nama_lengkap">Nama Lengkap</label><br>
+        <input type="text" id="nama_lengnkap" name="nama_lengkap" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="tanggal_lahir">Tanggal Lahir</label><br>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+        <label for="alamat">Alamat</label><br>
+        <input type="text" id="alamat" name="alamat" required><br><br>
+        <label for="program_dipilih"> Program dipilih</label><br>
+        <select name="program_dipilih" id="program_dipilih" required>
+            <option value="" disabled selected>pilih salah satu</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Teknik Mesin">Teknik Mesin</option>
+        </select> <br> <br>
+
+        <button type="submit">simpan</button>
+    </form>
+    
+</body>
+</html>
