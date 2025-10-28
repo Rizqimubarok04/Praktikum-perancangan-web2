@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+</head>
+<body>
+    <h2>PHP For Validation Example</h2>
+     <p>* wajib diisi</p>
+
+    <form action="koneksi.php" method="post">
+        Nama: <input type="text" name="name" required> *<br><br>
+        E-mail: <input type="email" name="email" required> *<br><br>
+        Website: <input type="text" name="website"><br><br>
+        Komentar: <br>
+        <textarea name="comment" rows="5" cols="40"></textarea><br><br>
+        Jenis Kelamin:
+        <input type="radio" name="gender" value="Female" required> Female
+        <input type="radio" name="gender" value="Male"> Male <br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
