@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form registration</title>
+</head>
+<body>
+    <h3><b>REGISTRATION FORM <br> ENGLISH COURSE</b></h3>
+    <form action="koneksi.php" method="post">
+        1. Full Name: <input type="text" name="full_name" required> <br><br>
+        2. Address: <input type="text" name="address" required>
+                Postal Code: <input type="text" name="postal_code" > <br><br>
+        3. Telephone: <input type="text" name="telephone"><br><br>
+        4. Place/Date of Birth: <br>
+        <input type="text" name="place_of_birth" placeholder="place">
+        <input type="date" name="date_of_birth"><br><br>
+        5. Gender:
+        <input type="radio" name="gender" value="Female" required> Female
+        <input type="radio" name="gender" value="Male"> Male <br><br>
+        6. Religion:
+        <input type="radio" name="religion" value="muslim" required> Muslim
+        <input type="radio" name="religion" value="christian"> Christian 
+        <input type="radio" name="religion" value="hinduism" > Hinduism
+        <input type="radio" name="religion" value="buddhaism"> Buddhaism 
+        <input type="radio" name="religion" value="others"> Others <br><br>
+        7. Attended School at:
+        <input type="text" name="attended_school_at"> <br><br>
+        <input type="submit" value="submit">
+    </form>
+</html>
