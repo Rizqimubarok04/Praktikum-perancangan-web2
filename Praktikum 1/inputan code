@@ -1,0 +1,26 @@
+<?php
+echo "\n Soal A: 4 6 9 13 18? ?\n" , "<br>";
+$a = [4];
+for ($i = 1, $diff = 2; $i < 7 ; $i++, $diff++){ 
+ $a[$i] = $a[$i -1] + $diff;
+}
+echo "Jawaban A: " . implode("  ", $a) . "\n" ,"<br>","<br>" ;
+
+
+echo "\n Soal B: 2 2 3 3 4 ?? \n" ,"<br>"; 
+ $b =[];
+ for($i =2; $i<= 4; $i++){
+    $b[]=$i;
+    $b[]=$i;
+ }
+echo "Jawaban B: ".implode("  ",$b)."\n" ,"<br>","<br>";
+
+
+echo "\n Soal C: 1 9 2 10 3 ?? \n", "<br>";
+$c=[];
+for($i= 1; $i <= 5; $i++){
+    $c[]=$i;
+    $c[]=8 + $i; //9,10,11...
+}
+echo "Jawaban C:" .implode("  ",array_slice($c, 0, 7))."\n";
+?>
